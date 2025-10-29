@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --soft-gradient: radial-gradient(
+      120% 120% at 50% -10%,
+      rgba(255, 235, 246, 0.85),
+      rgba(255, 255, 255, 0.95)
+    )
+    fixed;
+}
+
+* {
+  min-width: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans text-slate-800 bg-rose-50 antialiased;
+  background-image: var(--soft-gradient);
+  background-size: cover;
+}
+
+::selection {
+  background: rgba(244, 178, 208, 0.55);
+  color: inherit;
+}
+
+.bg-soft {
+  background-image: var(--soft-gradient);
+}
+
+.card {
+  @apply rounded-2xl border border-white/50 bg-white/80 shadow-lg shadow-rose-100/70 backdrop-blur;
+}
+
+.heading-accent {
+  @apply font-display text-rose-500;
+}
+
+.timeline-line {
+  background: linear-gradient(
+    180deg,
+    rgba(249, 168, 212, 0.5) 0%,
+    rgba(251, 207, 232, 0.7) 100%
+  );
+}

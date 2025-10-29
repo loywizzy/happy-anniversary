@@ -1,0 +1,21 @@
+.next/
+.turbo/
+node_modules/
+out/
+dist/
+build/
+
+# environment / secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# misc
+*.log
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+coverage/
+*.DS_Store
