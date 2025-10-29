@@ -57,7 +57,7 @@ export const usePrefersReducedMotionSafe = (): boolean => {
   if (typeof window === "undefined") {
     return false;
   }
-  return prefers;
+  return prefers ?? false;
 };
 
 export const useSmartMotion = () => {
